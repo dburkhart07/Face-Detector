@@ -1,5 +1,6 @@
 # Face-Detector
-This is a program that can either use a photo, or video, and keep track of all the faces on the screen at once. It uses a pre-trained algorithm to detect a face (haar face detector), and based on this trained model, uses that to recognize any face on the screen. It does this by using the face classifier from haar cascade to constantly get the coordinates of the face(s) on the screen, and based on that, a rectangle is created around the face(s). The program runs indefinitely until a space bar is pressed. Can also work for any video, or photo, as long as it is in the VS environment, and it is assigned to the static variables image or video.
-Credit to @Clever Programmer on Youtube
+This app is able to take any video or image, and highlights all the faces in them in a rectangle. For this app, I used the opencv Python library, as well as a pre-trained haar cascade face detector model, which is attached in the files list. The program allows for any image or video that is saved in the environment to be assigned to static variables, and applies the fce detectors on them, producing a list of the coordinates of each face on the screen. We then use those coordinates to create a rectangle around each of those faces. For videos, we continue to loop through this entire process while the video successfully reads frames. This means that for the conversion of image to video, we just treat the video as a bunch of images that we are detecting the faces of each frame, and continue to loop through that until the video no longer reads any frames (the video ends). The detector can run until the video ends, or until the space bar is pressed.
+Credit to @Clever Programmer on Youtube 
+
 
 
